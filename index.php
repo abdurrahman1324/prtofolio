@@ -19,7 +19,7 @@
 <header class="edica-header edica-landing-header sticky-navbar">
 <div class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="index.html"><span><b>Portofolio</b></span></a>
+        <a class="navbar-brand"><span><b>Portofolio</b></span></a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#edicaMainNav" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -32,10 +32,13 @@
                     <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a id="#projectc" href="#projectc" class="nav-link">Projectc</a>
+                    <a class="nav-link" href="#certification">Certification</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#certification">Certification</a>
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a id="#projectc" href="#projectc" class="nav-link">Projectc</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
@@ -45,7 +48,7 @@
     </nav>
 </div>
 </header>
-        <section>
+        <section id="index">
             <div class="container">
                 <div class="profile">
                 <img data-aos="fade-down-left" class="rounded-circle profileImage"src="assets/image/profile.jpg" alt="">
@@ -59,12 +62,12 @@
         </section>
     </div>
 <main>
-        <section id="about"class="edica-landing-section edica-landing-about">
+        <section id="about"class="edica-landing-section edica-landing-about bg-light">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6" data-aos="fade-up-right">
                         <h4 class="edica-landing-section-subtitle-alt">ABOUT US</h4>
-                        <p>Hallo, Perkenalkan saya Abdurrahman. Saat ini saya masih menempuh pendidikan Sekolah Menengah Kejurusan/SMK Jurusan PPLG di SMKN 8 PEKANBARU. Kab. Riau jl. Tengku kasim perkasa</p>
+                        <p>Hallo teman, Perkenalkan saya Abdurrahman.Saya seoraang web developer yang baru belajar html, css, javascript dan php saya belum terlalu mendalami itu, Saat ini saya masih menempuh pendidikan Sekolah Menengah Kejurusan/SMK Jurusan PPLG di SMKN 8 PEKANBARU. Kab. Riau jl. Tengku kasim perkasa</p>
                         <ul class="landing-about-list">
                             <li>Pendidikan</li>
                             <p><b>2011,</b> TK Quantum Kids, Pekanabaru</p>
@@ -74,21 +77,12 @@
                         </ul>
                     </div>
                     <div class="col-md-6" data-aos="fade-up-left">
-                        <img src="assets/image/profile.jpg" width="300px" alt="about" class="img-fluid">
+                        <img src="assets/image/b.png" width="600px" alt="about" class="img-fluid">
                     </div>
                 </div>
             </div>
         </section>
-        <section id="projectc" class="edica-landing-section edica-landing-clients">
-            <div class="container">
-                <h4 class="edica-landing-section-subtitle-alt">PROJECTC</h4>
-                <div class="partners-wrapper">
-                    <img src="assets/image/p.png" alt="client logo" data-aos="flip-right" data-aos-delay="250">
-                    <img src="assets/image/a.png" alt="client logo" data-aos="flip-right" data-aos-delay="500">
-                </div>
-            </div>
-        </section>
-        <section id="certification" class="edica-landing-section edica-landing-services">
+        <section id="certification" class="edica-landing-section edica-landing-services" data-aos="fade-up-left">
             <div class="container">
             <h4  class="edica-landing-section-subtitle-alt">CERTIFICATION</h4>
             <table class="table text-center" id="dataTables-example">
@@ -101,18 +95,59 @@
                 </thead>
                 <tbody>
                     <td>1</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
+                    <td>Lomba Olahraga</td>
+                    <td>Menpora</td>
+                    <td>2022</td>
                     <td><button class="btn btn-primary">View</button></td>
                 </tbody>
                </table>
                 </div>
             </div>
         </section>
+        <section id="skills" class="py-5 bg-light">
+        <div class="container"  data-aos="flip-up" data-aos-delay="250">
+        <h4 class="text text-center">SKILLS</h4>
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <div class="progress-circle skill-html">
+                        <span>50%</span>
+                    </div>
+                    <h3>HTML</h3>
+                </div>
+                <div class="col-md-3">
+                    <div class="progress-circle skill-css">
+                        <span>50%</span>
+                    </div>
+                    <h3>CSS</h3>
+                </div>
+                <div class="col-md-3">
+                    <div class="progress-circle skill-js">
+                        <span>30%</span>
+                    </div>
+                    <h3>JS</h3>
+                </div>
+                <div class="col-md-3">
+                    <div class="progress-circle skill-php">
+                        <span>30%</span>
+                    </div>
+                    <h3>PHP</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+        <section id="projectc" class="edica-landing-section edica-landing-clients">
+            <div class="container">
+                <h4 class="edica-landing-section-subtitle-alt">PROJECTC</h4>
+                <div class="partners-wrapper">
+                    <img src="assets/image/p.png" alt="client logo" data-aos="flip-right" data-aos-delay="250">
+                    <img src="assets/image/a.png" alt="client logo" data-aos="flip-right" data-aos-delay="500">
+                </div>
+            </div>
+        </section>
+       
         <section id="contact" class="edica-landing-section edica-landing-testimonials" data-aos="fade-up">
             <div class="container">
-            <h4  class="edica-landing-section-subtitle-alt">CONTACTC</h4>
+            <h4 class="text text-center">CONTACTC</h4>
                 <div class="logo-container">
                     <a href="https://www.instagram.com" target="_blank">
                         <img src="assets/image/iconig.jpeg" class="logo" alt="Instagram">
@@ -127,13 +162,13 @@
                         YouTube
                     </a>
                     <a href="https://twitter.com" target="_blank">
-                        <img src="assets/image/twiter.png" class="logo" alt="Twitter">
+                        <img src="assets/image/w.png" class="logo" alt="Twitter">
                         Twitter 
                     </a>
                 </div>
             </div>
         </section>
-    <footer  class="edica-footer">
+    <footer  class="edica-footer bg-dark text-light">
         <div class="container">
             <div class="row">
                 <div class="col-md-7">

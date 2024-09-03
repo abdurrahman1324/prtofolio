@@ -1,6 +1,7 @@
 body {
     padding-top: 80px; /* Menambahkan padding untuk menghindari konten tertutupi navbar */
 }
+
 .navbar {
     position: fixed; /* Membuat navbar tetap di bagian atas */
     top: 0; /* Posisi dari atas halaman */
@@ -13,7 +14,7 @@ body {
     display: flex; 
     justify-content: space-between; 
     z-index: 1000; /* Agar navbar tetap di atas konten lain */
-}       
+}
 
 .navbar-nav .nav-link {
     padding: 10px 20px; /* Sesuaikan padding untuk menjaga jarak antar item */
@@ -45,9 +46,11 @@ body {
     flex-direction: column;
     margin-top: 90px;
 }
+
 .profileImage {
-    width: 300px;;
+    width: 300px;
 }
+
 h2 {
     display: flex;
     align-items: center;
@@ -72,20 +75,8 @@ h2 {
     max-width: 100%;
     height: auto;
 }
-.carousel-inner img {
-    max-width: 100%;
-    height: auto;
-}
-.carousel-inner img {
-    max-width: 100%;
-    height: auto;
-}
-.carousel-inner img {
-    max-width: 5%;
-    height: 5%;
-}
+
 .carousel {
-    /* Hapus fitur slide */
     pointer-events: none; /* Menghilangkan interaksi dengan elemen carousel */
 }
 
@@ -96,6 +87,7 @@ h2 {
 .carousel-item {
     display: block;
 }
+
 .logo-container {
     display: flex;
     justify-content: space-between; /* Menyebar logo di sepanjang baris */
@@ -107,36 +99,97 @@ h2 {
     height: 50px;
     margin: 5px; /* Tambahkan jarak antar logo jika diperlukan */
 }
+
 .typed {
-  display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 2px solid;
-  animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
 }
 
 @keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }
 
 @keyframes blink-caret {
-  from, to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: black;
-  }
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
+    }
 }
 
-/* Membatasi panjang span untuk keperluan visualisasi */
-p {
-  font-family: monospace;
-  font-size: 1.2em;
+/* Container untuk lingkaran progress */
+.progress-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    position: relative;
+    margin: 0 auto 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
 
+/* Angka di tengah lingkaran */
+.progress-circle span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
 
+/* Lingkaran latar belakang */
+.progress-circle:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: #f8f8f8;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+/* Animasi lingkaran berdasarkan skill */
+.skill-html {
+    background: conic-gradient(#ff6b6b 0% 50%, #e0e0e0 50% 100%);
+}
+
+.skill-css {
+    background: conic-gradient(#4db8ff 0% 50%, #e0e0e0 50% 100%);
+}
+
+.skill-js {
+    background: conic-gradient(#f7d154 0% 30%, #e0e0e0 30% 100%);
+}
+
+.skill-php {
+    background: conic-gradient(#8892bf 0% 30%, #e0e0e0 30% 100%);
+}
+
+/* Menambahkan animasi rotasi pada lingkaran */
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* Efek hover untuk menambahkan interaksi */
+.progress-circle:hover {
+    animation: rotate 2s linear infinite;
+}
